@@ -11,7 +11,7 @@
 
 ```bash
 # Register the marketplace
-/plugin marketplace add PurpleAILAB/Vigilo
+/plugin marketplace add BitterSecurity/Vigilo
 
 # Install the plugin
 /plugin install vigilo
@@ -29,7 +29,7 @@
 
 ```bash
 # Clone repository
-git clone https://github.com/PurpleAILAB/vigilo.git
+git clone https://github.com/BitterSecurity/Vigilo.git
 cd vigilo/packages/opencode
 
 # Install dependencies
@@ -71,7 +71,7 @@ For contributors developing Vigilo locally.
 ### Setup
 
 ```bash
-git clone https://github.com/PurpleAILAB/Vigilo.git
+git clone https://github.com/BitterSecurity/Vigilo.git
 cd vigilo/packages/opencode
 bun install
 bun link

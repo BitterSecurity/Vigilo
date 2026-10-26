@@ -16,7 +16,7 @@ body:
       options:
         - label: I have searched existing issues and discussions to avoid duplicates
           required: true
-        - label: I have read the [documentation](https://github.com/PurpleAILAB/Vigilo#readme)
+        - label: I have read the [documentation](https://github.com/BitterSecurity/Vigilo#readme)
           required: true
 
   - type: textarea
