@@ -1,0 +1,65 @@
+name: ci
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  opencode:
+    name: opencode (typecheck, test, build)
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: packages/opencode
+    steps:
+      - uses: actions/checkout@v4
+      - uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: "1.4.2"
+      - name: Install dependencies
+        run: bun install
+        env:
+          BUN_INSTALL_ALLOW_SCRIPTS: "@ast-grep/napi"
+      - name: Typecheck
+        run: bun run typecheck
+      - name: Unit tests
+        run: bun test
+      - name: Build plugin
+        run: bun run build
+      - name: CLI smoke test
+        run: bun run src/cli/index.ts --version
+
+  bench:
+    name: bench (typecheck, offline tests, data check)
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: packages/bench
+    steps:
+      - uses: actions/checkout@v4
+      - uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: "1.4.2"
+      - name: Install dependencies
+        run: bun install --frozen-lockfile
+      - name: Typecheck
+        run: bun run typecheck
+      # src/scorer/baseline-scorer.test.ts calls scoreBaseline() with real findings, which needs a
+      # live OpenCode server + LLM and hard-exits the runner (process.exit in utils.error). Only the
+      # offline test files run here until that test is mocked.
+      - name: Unit tests (offline only)
+        run: bun test src/utils.test.ts src/__tests__/setup.test.ts
+      - name: Build CLI
+        run: bun run build
+      - name: Offline bench data check (no LLM, no network)
+        run: bun run ../../.github/scripts/check-bench-data.ts
+      - name: Report smoke test (no scores -> no-op)
+        run: bun run src/cli.ts report --all

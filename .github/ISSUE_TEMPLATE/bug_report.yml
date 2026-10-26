@@ -18,7 +18,7 @@ body:
           required: true
         - label: I am using the latest version of Vigilo
           required: true
-        - label: I have read the [documentation](https://github.com/PurpleAILAB/Vigilo#readme)
+        - label: I have read the [documentation](https://github.com/BitterSecurity/Vigilo#readme)
           required: true
 
   - type: textarea

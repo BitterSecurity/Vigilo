@@ -21,7 +21,7 @@ From Latin *vigilo* — "I watch, I guard." An autonomous security legion inspir
 Register the marketplace:
 
 ```bash
-/plugin marketplace add PurpleAILAB/Vigilo
+/plugin marketplace add BitterSecurity/Vigilo
 ```
 
 Install the plugin:

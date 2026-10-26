@@ -41,7 +41,7 @@ bunx vigilo install
 Or manually:
 
 ```bash
-git clone https://github.com/PurpleAILAB/Vigilo.git vigilo
+git clone https://github.com/BitterSecurity/Vigilo.git vigilo
 cd vigilo
 bun install
 bun run build

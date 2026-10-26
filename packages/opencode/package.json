@@ -87,10 +87,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/PurpleAILAB/Vigilo"
+    "url": "https://github.com/BitterSecurity/Vigilo"
   },
   "bugs": {
-    "url": "https://github.com/PurpleAILAB/Vigilo/issues"
+    "url": "https://github.com/BitterSecurity/Vigilo/issues"
   },
-  "homepage": "https://github.com/PurpleAILAB/Vigilo#readme"
+  "homepage": "https://github.com/BitterSecurity/Vigilo#readme"
 }

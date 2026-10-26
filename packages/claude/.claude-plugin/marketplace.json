@@ -13,7 +13,7 @@
       "name": "vigilo",
       "source": {
         "source": "github",
-        "repo": "PurpleAILAB/Vigilo"
+        "repo": "BitterSecurity/Vigilo"
       },
       "description": "AI-powered smart contract security audit. Full LSP support for Solidity and Rust, analysis support for Cairo and Move.",
       "version": "0.0.7",
@@ -21,8 +21,8 @@
         "name": "PurpleCHOIms",
         "email": "catower917@gmail.com"
       },
-      "homepage": "https://github.com/PurpleAILAB/Vigilo",
-      "repository": "https://github.com/PurpleAILAB/Vigilo",
+      "homepage": "https://github.com/BitterSecurity/Vigilo",
+      "repository": "https://github.com/BitterSecurity/Vigilo",
       "license": "BSL-1.1",
       "category": "security",
       "tags": ["security", "audit", "smart-contract", "solidity", "web3", "blockchain", "defi"],

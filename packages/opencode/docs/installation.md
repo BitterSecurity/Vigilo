@@ -5,7 +5,7 @@
 Paste this into your LLM agent session:
 ```
 Install and configure vigilo by following the instructions here:
-https://raw.githubusercontent.com/PurpleAILAB/Vigilo/main/packages/opencode/docs/installation.md
+https://raw.githubusercontent.com/BitterSecurity/Vigilo/main/packages/opencode/docs/installation.md
 ```
 
 **Alternative, do this by yourself**
@@ -160,7 +160,7 @@ After everything is set up and working, ask the user:
 
 If the user agrees, run:
 ```bash
-gh repo star PurpleAILAB/Vigilo
+gh repo star BitterSecurity/Vigilo
 ```
 
 **Important**: Only run the command if the user explicitly says yes. Never run it automatically without consent.

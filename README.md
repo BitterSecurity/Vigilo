@@ -15,10 +15,10 @@
 <div align="center">
 
 [![npm version](https://img.shields.io/npm/v/vigilo?color=cb3837&labelColor=black&logo=npm&style=flat-square)](https://www.npmjs.com/package/vigilo)
-[![GitHub Release](https://img.shields.io/github/v/release/PurpleAILAB/Vigilo?color=369eff&labelColor=black&logo=github&style=flat-square)](https://github.com/PurpleAILAB/Vigilo/releases)
-[![GitHub Stars](https://img.shields.io/github/stars/PurpleAILAB/Vigilo?color=ffcb47&labelColor=black&style=flat-square)](https://github.com/PurpleAILAB/Vigilo/stargazers)
-[![GitHub Issues](https://img.shields.io/github/issues/PurpleAILAB/Vigilo?color=ff80eb&labelColor=black&style=flat-square)](https://github.com/PurpleAILAB/Vigilo/issues)
-[![License](https://img.shields.io/badge/license-BSL--1.1-white?labelColor=black&style=flat-square)](https://github.com/PurpleAILAB/Vigilo/blob/main/LICENSE)
+[![GitHub Release](https://img.shields.io/github/v/release/BitterSecurity/Vigilo?color=369eff&labelColor=black&logo=github&style=flat-square)](https://github.com/BitterSecurity/Vigilo/releases)
+[![GitHub Stars](https://img.shields.io/github/stars/BitterSecurity/Vigilo?color=ffcb47&labelColor=black&style=flat-square)](https://github.com/BitterSecurity/Vigilo/stargazers)
+[![GitHub Issues](https://img.shields.io/github/issues/BitterSecurity/Vigilo?color=ff80eb&labelColor=black&style=flat-square)](https://github.com/BitterSecurity/Vigilo/issues)
+[![License](https://img.shields.io/badge/license-BSL--1.1-white?labelColor=black&style=flat-square)](https://github.com/BitterSecurity/Vigilo/blob/main/LICENSE)
 
 </div>
 
@@ -71,7 +71,7 @@ Paste this into your LLM agent session:
 
 ```
 Install and configure vigilo by following the instructions here:
-https://raw.githubusercontent.com/PurpleAILAB/Vigilo/main/packages/opencode/docs/installation.md
+https://raw.githubusercontent.com/BitterSecurity/Vigilo/main/packages/opencode/docs/installation.md
 ```
 
 ### Manual Install
@@ -83,7 +83,7 @@ bunx vigilo install
 ### Claude Code
 
 ```bash
-/plugin marketplace add PurpleAILAB/Vigilo
+/plugin marketplace add BitterSecurity/Vigilo
 /plugin install vigilo@Vigilo
 ```
 
@@ -202,7 +202,7 @@ For contributors working on Vigilo itself.
 ### Setup
 
 ```bash
-git clone https://github.com/PurpleAILAB/Vigilo.git
+git clone https://github.com/BitterSecurity/Vigilo.git
 cd vigilo/packages/opencode
 bun install
 bun link
@@ -263,6 +263,6 @@ Commercial licensing: catower917@gmail.com
 
 **Ready to hunt bugs? 🔍**
 
-[Get Started](./packages/opencode/docs/installation.md) · [Report Bug](https://github.com/PurpleAILAB/Vigilo/issues) · [Request Feature](https://github.com/PurpleAILAB/Vigilo/issues)
+[Get Started](./packages/opencode/docs/installation.md) · [Report Bug](https://github.com/BitterSecurity/Vigilo/issues) · [Request Feature](https://github.com/BitterSecurity/Vigilo/issues)
 
 </div>
